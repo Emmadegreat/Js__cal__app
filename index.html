@@ -18,40 +18,39 @@
                     <p id="output__value"></p>
                 </div>
             </div>-->
-            <div id="keyboard">
+            <div id="layout">
+                
                 <input type="text" id="inputext" placeholder="0">
-                <button onClick="Calculate()" class="operator" id="clear">C</button>
-                <button onClick="Calculate()" class="operator" id="backspace">DEL</button>
-                <button onClick="Calculate('%')" class="operator" id="%">%</button>
-                <button onClick="Calculate('/')" class="operator" id="/">&#247;</button>
+                <div id="keyboard">
+                    <button onClick="Clr()" class="operator" id="clear">C</button>
+                    <button onClick="Del()" class="operator" id="backspace">DEL</button>
+                    <button onClick="Calculate('%')" class="operator" id="%">%</button>
+                    <button onClick="Calculate('/')" class="operator" id="/">&#247;</button>
 
-                <button onClick="Calculate(7)" class="number" id="7">7</button>
-                <button onClick="Calculate(8)" class="number" id="8">8</button>
-                <button onClick="Calculate(9)" class="number" id="9">9</button>
+                    <button onClick="Calculate(7)" class="number" id="7">7</button>
+                    <button onClick="Calculate(8)" class="number" id="8">8</button>
+                    <button onClick="Calculate(9)" class="number" id="9">9</button>
 
-                <button onClick="Calculate('*')" class="operator" id="*">&times;</button><br><br>
+                    <button onClick="Calculate('*')" class="operator" id="*">&times;</button><br><br>
 
-                <button onClick="Calculate(4)" class="number" id="4">4</button>
-                <button onClick="Calculate(5)" class="number" id="5">5</button>
-                <button onClick="Calculate(6)" class="number" id="6">6</button>
+                    <button onClick="Calculate(4)" class="number" id="4">4</button>
+                    <button onClick="Calculate(5)" class="number" id="5">5</button>
+                    <button onClick="Calculate(6)" class="number" id="6">6</button>
 
-                <button onClick="Calculate('-')" class="operator minus" id="-">-</button><br><br>
+                    <button onClick="Calculate('-')" class="operator minus" id="-">-</button><br><br>
 
-                <button onClick="Calculate(1)" class="number" id="1">1</button>
-                <button onClick="Calculate(2)" class="number" id="2">2</button>
-                <button onClick="Calculate(3)" class="number" id="3">3</button>
+                    <button onClick="Calculate(1)" class="number" id="1">1</button>
+                    <button onClick="Calculate(2)" class="number" id="2">2</button>
+                    <button onClick="Calculate(3)" class="number" id="3">3</button>
 
-                <button onClick="Calculate('+')" class="operator plus" id="+">+</button><br><br>
+                    <button onClick="Calculate('+')" class="operator plus" id="+">+</button><br><br>
 
-                <button onClick="Calculate('.')" class="empty" id="empty">.</button>
-                <button onClick="Calculate(0)" class="number" id="0">0</button>
-                <button onClick="Calculate()" class="empty" id="empty"></button>
-                <button onClick="result()" class="operator equal" id="=">=</button>
+                    <button onClick="Calculate('.')" class="empty" id="empty">.</button>
+                    <button onClick="Calculate(0)" class="number" id="0">0</button>
+                    <!--<button onClick="Calculate()" class="empty" id="empty"></button>-->
+                    <button onClick="Result()" class="operator equal" id="=">=</button>
 
-
-                <button onclick="Tell();">click me</button>
-                <input type="text" id="p" value="come">
-
+                </div>
             </div>
             
         </div>
