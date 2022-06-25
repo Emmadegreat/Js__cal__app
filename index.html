@@ -9,17 +9,12 @@
 </head>
 <body>
     <div class="container">
+        <h2 style="text-align: center;color: #fff;">JS-CALCULATOR-APP</h2>
         <div id="calculator">
-            <!--<div id="result">
-                <div id="history">
-                    <p id="history__value"></p>
-                </div>
-                <div id="output">
-                    <p id="output__value"></p>
-                </div>
-            </div>-->
+            
             <div id="layout">
                 
+                <p id="p"></p>
                 <input type="text" id="inputext" placeholder="0">
                 <div id="keyboard">
                     <button onClick="Clr()" class="operator" id="clear">C</button>
@@ -48,7 +43,7 @@
                     <button onClick="Calculate('.')" class="empty" id="empty">.</button>
                     <button onClick="Calculate(0)" class="number" id="0">0</button>
                     <!--<button onClick="Calculate()" class="empty" id="empty"></button>-->
-                    <button onClick="Result()" class="operator equal" id="=">=</button>
+                    <button onClick="Result('=')" class="operator equal" id="=">=</button>
 
                 </div>
             </div>

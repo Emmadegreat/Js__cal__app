@@ -8,7 +8,7 @@ const Result = () => {
     try {
         result.value = eval(result.value);
     } catch (error) {
-        alert("invalid operation");
+        document.getElementById("inputext").value = "error";
     } 
 }
 
