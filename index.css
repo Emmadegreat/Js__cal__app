@@ -26,7 +26,8 @@
     height: 70vh;
     align-items: center;
     text-align: center;
-    padding: 10rem auto 3rem auto;
+    padding-top: 15rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
