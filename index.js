@@ -1,20 +1,25 @@
 let result = document.getElementById("inputext");
 
-const Calculate=(number)=> {
+//function to display the input on each keypad
+function Calculate(number) {
     result.value = result.value+number;
 }
 
-const Result = () => {
+//function to give the result/output of the calculation by clicking the equal key
+function Result(){
     try {
         result.value = eval(result.value);
     } catch (error) {
-        document.getElementById("inputext").value = "error";
+        document.getElementById("inputext").value = "math error!";
     } 
 }
 
-function Clr() {
+//function to clear everything on the input bar
+function ClearAll() {
     result.value = "";
 }
-function Del() {
+
+//function to delete inputs on the input bar from the last to the first
+function Delete() {
     result.value = result.value.slice(0, -1);
 }

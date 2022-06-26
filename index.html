@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container">
-        <h2 style="text-align: center;color: #fff;">JS-CALCULATOR-APP</h2>
-        <div id="calculator">
+
+    <header><!----header-->
+        <h1>JS-CALCULATOR-APP</h1>
+    </header>
+
+    <main class="container"><!--page body -->
+        
+        <div id="calculator"><!---calculator body-->
             
-            <div id="layout">
+            <div id="calculator__layout"><!---calculator layout----->
                 
                 <p id="p"></p>
                 <input type="text" id="inputext" placeholder="0">
-                <div id="keyboard">
-                    <button onClick="Clr()" class="operator" id="clear">C</button>
-                    <button onClick="Del()" class="operator" id="backspace">DEL</button>
+
+                <div id="keypads"><!--keypad button -->
+                    <button onClick="ClearAll()" class="operator" id="clear">C</button>
+                    <button onClick="Delete()" class="operator" id="backspace">DEL</button>
                     <button onClick="Calculate('%')" class="operator" id="%">%</button>
                     <button onClick="Calculate('/')" class="operator" id="/">&#247;</button>
 
@@ -40,7 +46,7 @@
 
                     <button onClick="Calculate('+')" class="operator plus" id="+">+</button><br><br>
 
-                    <button onClick="Calculate('.')" class="empty" id="empty">.</button>
+                    <button onClick="Calculate('.')" class="number" id="dot">.</button>
                     <button onClick="Calculate(0)" class="number" id="0">0</button>
                     <!--<button onClick="Calculate()" class="empty" id="empty"></button>-->
                     <button onClick="Result('=')" class="operator equal" id="=">=</button>
@@ -49,8 +55,15 @@
             </div>
             
         </div>
-    </div>
+    </main>
+
     
+    <footer><!----footer--->
+        <span>&COPY; EMFCONZULT</span>&nbsp;&nbsp;
+        <span> 2022</span>&nbsp;&nbsp;
+        <span>ZURITEAM</span>
+    </footer>
+        
     <script src="./index.js"></script>
 </body>
 </html>

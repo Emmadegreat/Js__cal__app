@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+header{
+    background: #fff;
+    height: 10vh;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: #1d3044;
+    line-height: 2;
+}
+
+footer{
+    background: rgb(20, 20, 20);
+    height: 10vh;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    line-height: 2;
+    font-size: 1.8rem;
+}
+
 .container{
     background-color: #1d3044;
     width: 100%;
@@ -22,7 +43,7 @@
     color: #000;
 }
 
-#layout{
+#calculator__layout{
     height: 70vh;
     align-items: center;
     text-align: center;
@@ -32,7 +53,7 @@
     justify-content: center;
 }
 
-#keyboard{
+#keypads{
     height: 28rem;
     border-radius: 2.5rem;
     padding: 3rem 1rem 1rem 1.5rem;
@@ -60,21 +81,18 @@ button{
     border-width: 0;
     font-weight: bold;
     font-size: 1.5rem;
-}
-
-.number, .empty{
-    background: lightcoral;
-}
-
-.number, .operator, .empty{
     cursor: pointer;
 }
 
-.operator:active, .number:active{
-    font-size: 13px;
+.number{
+    background: lightcoral;
 }
 
-.operator:focus, .number:focus, .empty:focus{
+.operator:active, .number:active{
+    font-size: 2rem
+}
+
+.operator:focus, .number:focus{
     outline: 0;
 }
 
