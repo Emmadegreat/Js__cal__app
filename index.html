@@ -14,11 +14,11 @@
     </header>
 
     <main class="container"><!--page body -->
-        
+
         <div id="calculator"><!---calculator body-->
-            
+
             <div id="calculator__layout"><!---calculator layout----->
-                
+
                 <p id="p"></p>
                 <input type="text" id="inputext" placeholder="0">
 
@@ -26,7 +26,13 @@
                     <button onClick="ClearAll()" class="operator" id="clear">C</button>
                     <button onClick="Delete()" class="operator" id="backspace">DEL</button>
                     <button onClick="Calculate('%')" class="operator" id="%">%</button>
+                    <button onClick="Sqr('√')" class="operator" id="%">&#x221A;</button>
+
+                    <button onClick="Calculate('/')" class="operator" id="clear">Tan</button>
+                    <button onClick="Calculate('/')" class="operator" id="backspace">Sin</button>
+                    <button onClick="Calculate('/')" class="operator" id="%">Cos</button>
                     <button onClick="Calculate('/')" class="operator" id="/">&#247;</button>
+
 
                     <button onClick="Calculate(7)" class="number" id="7">7</button>
                     <button onClick="Calculate(8)" class="number" id="8">8</button>
@@ -53,17 +59,17 @@
 
                 </div>
             </div>
-            
+
         </div>
     </main>
 
-    
+
     <footer><!----footer--->
-        <span>&COPY; EMFCONZULT</span>&nbsp;&nbsp;
-        <span> 2022</span>&nbsp;&nbsp;
-        <span>ZURITEAM</span>
+        <span>&COPY; EMFCONZULT - </span>&nbsp;&nbsp;
+        <span>CWW TECH AFRICA </span>&nbsp; - &nbsp;
+        <span> COHORT 2.0  -  2022</span>
     </footer>
-        
+
     <script src="./index.js"></script>
 </body>
 </html>

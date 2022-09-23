@@ -2,65 +2,72 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 header{
-    background: #fff;
-    height: 10vh;
+    background: #fdf3f2;
+    height: 80px;
     width: 100%;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #1d3044;
     line-height: 2;
+}
+header h1{
+    font-size: 1.8rem;
 }
 
 footer{
     background: rgb(20, 20, 20);
-    height: 10vh;
+    height: 80px;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #fff;
     line-height: 2;
-    font-size: 1.8rem;
+    font-size: 1rem;
 }
 
-.container{
+main{
     background-color: #1d3044;
-    width: 100%;
-    height: 120vh;
-    padding: 20px;
+    padding: 6rem 0rem 6rem 0rem;
 }
 
 #calculator{
-    width: 25rem;
-    height: 40rem;
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
     background-color: cyan;
-    margin: 0 auto;
-    position: relative;
-    top: 3rem;
+    margin: auto;
     border-radius: 1rem;
     color: #000;
 }
 
 #calculator__layout{
-    height: 70vh;
+    height: auto;
     align-items: center;
     text-align: center;
-    padding-top: 12.5rem;
-    padding-bottom: 3rem;
+    padding: 1.5rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 #keypads{
-    height: 28rem;
+    height: auto;
     border-radius: 2.5rem;
-    padding: 3rem 1rem 1rem 1.5rem;
-    width: 350px;
-    background: midnightblue;  
-    box-shadow: rgb(33, 77, 56);  
+    width: 100%;
+    padding: 2rem 1rem 1rem 1.5rem;
+    max-width: 370px;
+    background: midnightblue;
+    box-shadow: rgb(33, 77, 56);
 }
 
 input[type=text]{
@@ -76,7 +83,7 @@ input[type=text]{
 button{
     width: 55px;
     height: 50px;
-    margin: 10px;
+    margin: 10px 16px 10px 10px;
     float: left;
     border-radius: 50%;
     border-width: 0;
@@ -98,15 +105,19 @@ button{
 }
 
 button:nth-child(4){
-    background: crimson;
+    background: #b72880;
     font-size: 20px;
 }
 button:nth-child(8){
-    background: rgb(3, 68, 32);
+    background: rgb(77, 206, 135);
+    font-size: 20px;
+}
+button:nth-child(12){
+    background: rgb(207, 215, 105);
     font-size: 20px;
 }
 .minus{
-    background: rgb(47, 7, 80);
+    background: rgb(116, 71, 154);
     font-size: 20px;
 }
 .plus{
@@ -117,4 +128,104 @@ button:nth-child(8){
     background: grey;
     font-size: 20px;
     width: 130px;
+}
+
+@media screen and (max-width:530px){
+    footer{
+        font-size: 0.6rem;
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width:420px){
+    main{
+        padding: 1.5rem 0.5rem 4rem 0.5rem;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    #calculator{
+        width: 100%;
+        height: auto;
+    }
+    #calculator__layout{
+        height: auto;
+        align-items: center;
+        text-align: center;
+        margin: 1.2rem 0.5rem;
+    }
+    #keypads{
+        height: auto;
+        border-radius: 2rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    button{
+        width: 55px;
+        float: left;
+        height: 45px;
+        margin: 0.6rem 0.5rem 0.5rem 1.2rem;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:376px){
+    #calculator{
+        width: 100%;
+        height: auto;
+    }
+    #calculator__layout{
+        height: auto;
+        align-items: center;
+        text-align: center;
+        margin: 1.2rem 0.3rem;
+    }
+    #keypads{
+        height: auto;
+        border-radius: 2rem;
+        width: 100%;
+        padding: 0.5rem 0.6rem;
+    }
+    button{
+        width: 48px;
+        float: left;
+        height: 45px;
+        margin: 0.5rem 0.7rem 0.5rem 0.8rem;
+        font-size: 1.2rem;
+    }
+    .equal{
+        background: grey;
+        font-size: 20px;
+        width: 115px;
+    }
+}
+
+@media screen and (max-width:336px){
+    #calculator{
+        width: 100%;
+        height: auto;
+    }
+    #calculator__layout{
+        height: auto;
+        align-items: center;
+        text-align: center;
+        margin: 1.2rem 0.3rem;
+    }
+    #keypads{
+        height: auto;
+        border-radius: 2rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    button{
+        width: 45px;
+        float: left;
+        height: 45px;
+        margin: 0.5rem 0.6rem 0.5rem 0.8rem;
+        font-size: 1.1rem;
+    }
+    .equal{
+        background: grey;
+        font-size: 20px;
+        width: 115px;
+    }
 }
