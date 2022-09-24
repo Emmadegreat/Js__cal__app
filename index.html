@@ -18,44 +18,44 @@
         <div id="calculator"><!---calculator body-->
 
             <div id="calculator__layout"><!---calculator layout----->
+                <button id="off" onclick="Off()">on/off</button>
 
-                <p id="p"></p>
                 <input type="text" id="inputext" placeholder="0">
-
+                <p id="display"></p>
                 <div id="keypads"><!--keypad button -->
-                    <button onClick="ClearAll()" class="operator" id="clear">C</button>
-                    <button onClick="Delete()" class="operator" id="backspace">DEL</button>
-                    <button onClick="Calculate('%')" class="operator" id="%">%</button>
-                    <button onClick="Sqr('√')" class="operator" id="%">&#x221A;</button>
+                    <button class="operator" id="clear">C</button>
+                    <button class="operator" id="backspace">DEL</button>
+                    <button value="%" class="operator" id="%">%</button>
+                    <button onClick="Sqr()" class="operator" id="sqr">&#x221A;</button>
 
-                    <button onClick="Calculate('/')" class="operator" id="clear">Tan</button>
-                    <button onClick="Calculate('/')" class="operator" id="backspace">Sin</button>
-                    <button onClick="Calculate('/')" class="operator" id="%">Cos</button>
-                    <button onClick="Calculate('/')" class="operator" id="/">&#247;</button>
+                    <button onClick="Tan()" class="operator" id="tan">Tan</button>
+                    <button onClick="Sin()" class="operator" id="sin">Sin</button>
+                    <button onClick="Sin()" class="operator" id="cos">Cos</button>
+                    <button value="/" class="operator" id="/">&#247;</button>
 
 
-                    <button onClick="Calculate(7)" class="number" id="7">7</button>
-                    <button onClick="Calculate(8)" class="number" id="8">8</button>
-                    <button onClick="Calculate(9)" class="number" id="9">9</button>
+                    <button value="7" class="number operator" id="7">7</button>
+                    <button value="8" class="number operator" id="8">8</button>
+                    <button value="9" class="number operator" id="9">9</button>
 
-                    <button onClick="Calculate('*')" class="operator" id="*">&times;</button><br><br>
+                    <button value="*" class="operator" id="*">&times;</button><br><br>
 
-                    <button onClick="Calculate(4)" class="number" id="4">4</button>
-                    <button onClick="Calculate(5)" class="number" id="5">5</button>
-                    <button onClick="Calculate(6)" class="number" id="6">6</button>
+                    <button value="4" class="number operator" id="4">4</button>
+                    <button value="5" class="number operator" id="5">5</button>
+                    <button value="6" class="number operator" id="6">6</button>
 
-                    <button onClick="Calculate('-')" class="operator minus" id="-">-</button><br><br>
+                    <button value="-" class="operator minus" id="-">-</button><br><br>
 
-                    <button onClick="Calculate(1)" class="number" id="1">1</button>
-                    <button onClick="Calculate(2)" class="number" id="2">2</button>
-                    <button onClick="Calculate(3)" class="number" id="3">3</button>
+                    <button value="1" class="number operator" id="1">1</button>
+                    <button value="2" class="number operator" id="2">2</button>
+                    <button value="3" class="number operator" id="3">3</button>
 
-                    <button onClick="Calculate('+')" class="operator plus" id="+">+</button><br><br>
+                    <button value="+" class="operator plus" id="+">+</button><br><br>
 
-                    <button onClick="Calculate('.')" class="number" id="dot">.</button>
-                    <button onClick="Calculate(0)" class="number" id="0">0</button>
+                    <button value="." class="number operator" id="dot">.</button>
+                    <button value="0" class="number operator" id="0">0</button>
                     <!--<button onClick="Calculate()" class="empty" id="empty"></button>-->
-                    <button onClick="Result('=')" class="operator equal" id="=">=</button>
+                    <button class="operator equal" id="equal">=</button>
 
                 </div>
             </div>

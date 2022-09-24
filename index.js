@@ -1,29 +1,66 @@
 let input = document.getElementById("inputext");
+let p = document.getElementById("display");
+let operators = document.querySelectorAll('.operator')
+let equal = document.getElementById('equal');
+let clear = document.getElementById('clear');
+let backspace = document.getElementById('backspace');
+let off = document.getElementById('off');
 
-//function to display the input on each keypad
-function Calculate(number) {
-    input.value = input.value+number;
+//function to display input from buttons
+for (let i = 0; i < operators.length; i++) {
+    operators[i].addEventListener('click', (e) => {
+        e.target.value;
+        input.value += e.target.value;
+    })
 }
 
-//function to give the result/output of the calculation by clicking the equal key
-function Result(){
+//function to operation equal-to
+equal.addEventListener('click', e => {
     try {
-        input.value = eval(input.value);
+        p.innerHTML = eval(input.value);
     } catch (error) {
-        document.getElementById("inputext").value = "math error!";
+        p.innerHTML = 'math error !';
     }
-}
+})
 
 //function to clear everything on the input bar
-function ClearAll() {
+clear.addEventListener('click', e => {
+  e.target.value;
     input.value = "";
-}
+    p.innerHTML = "";
+})
 
 //function to delete inputs on the input bar from the last to the first
-function Delete() {
-    input.value = input.value.slice(0, -1);
+backspace.addEventListener('click', e => {
+  e.target.value;
+  input.value = input.value.slice(0, -1);
+})
+
+//square-root function
+function Sqr() {
+    input.value = Math.sqrt(input.value, 2);
 }
 
-function Sqr() {
-    input.value = input.value+Math.sqrt(number);
+//tan function
+function Tan() {
+    input.value=Math.tan(input.value);
+}
+
+//sin function
+function Sin() {
+    input.value = Math.sin(input.value);
+}
+
+//cos function
+function Cos() {
+    input.value = Math.cos(input.value);
+}
+
+input.style.visibility = 'hidden';
+function Off() {
+    if (input.style.visibility === 'hidden') {
+        input.style.visibility = 'visible';
+    } else {
+        input.style.visibility = 'hidden';
+    }
 }

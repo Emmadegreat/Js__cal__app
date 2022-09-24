@@ -76,7 +76,7 @@ input[type=text]{
     height: 3rem;
     padding: 1rem;
     border-radius: 0.7rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: end;
 }
 
@@ -85,23 +85,22 @@ button{
     height: 50px;
     margin: 10px 16px 10px 10px;
     float: left;
-    border-radius: 50%;
+    border-radius: 10%;
     border-width: 0;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
+}
+button:hover{
+    background: #fff;
+}
+#display{
+    margin: 1rem;
+    font-size: 1.2rem;
 }
 
 .number{
     background: lightcoral;
-}
-
-.operator:active, .number:active{
-    font-size: 2rem
-}
-
-.operator:focus, .number:focus{
-    outline: 0;
 }
 
 button:nth-child(4){
@@ -165,7 +164,6 @@ button:nth-child(12){
         float: left;
         height: 45px;
         margin: 0.6rem 0.5rem 0.5rem 1.2rem;
-        font-size: 1.2rem;
     }
 }
 @media screen and (max-width:376px){
@@ -190,7 +188,6 @@ button:nth-child(12){
         float: left;
         height: 45px;
         margin: 0.5rem 0.7rem 0.5rem 0.8rem;
-        font-size: 1.2rem;
     }
     .equal{
         background: grey;
@@ -221,7 +218,6 @@ button:nth-child(12){
         float: left;
         height: 45px;
         margin: 0.5rem 0.6rem 0.5rem 0.8rem;
-        font-size: 1.1rem;
     }
     .equal{
         background: grey;
