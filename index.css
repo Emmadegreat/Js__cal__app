@@ -37,7 +37,7 @@ footer{
 
 main{
     background-color: #1d3044;
-    padding: 6rem 0rem 6rem 0rem;
+    padding: 3rem 0rem;
 }
 
 #calculator{
@@ -72,7 +72,7 @@ main{
 
 input[type=text]{
     width: 84%;
-    margin: 1rem;
+    margin: 0.7rem;
     height: 3rem;
     padding: 1rem;
     border-radius: 0.7rem;
@@ -127,6 +127,11 @@ button:nth-child(12){
     background: grey;
     font-size: 20px;
     width: 130px;
+}
+#off{
+    font-size: 0.8rem;
+    height: 30px;
+    width: 60px;
 }
 
 @media screen and (max-width:530px){

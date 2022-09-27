@@ -14,7 +14,7 @@ for (let i = 0; i < operators.length; i++) {
     })
 }
 
-//function to operation equal-to
+//function to operate equal-to
 equal.addEventListener('click', e => {
     try {
         p.innerHTML = eval(input.value);
