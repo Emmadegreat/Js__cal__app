@@ -6,7 +6,7 @@ let clear = document.getElementById('clear');
 let backspace = document.getElementById('backspace');
 let off = document.getElementById('off');
 
-let year = document.getElementById("year");
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
 //function to display input from buttons
@@ -68,4 +68,4 @@ function Off() {
     }
 }
 
-year.innerHTML = new Date().getFullYear();
+
